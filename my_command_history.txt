@@ -1,67 +1,3 @@
-  555  sudo ufw status numbered verbose
-  556  sudo ufw delete 1
-  557  sudo ufw status numbered verbose
-  558  sudo ufw delete 1
-  559  sudo ufw status numbered verbose
-  560  sudo ufw insert 1 deny from 10.0.0.37
-  561  clear
-  562  sudo ss -tunlep
-  563  sudo ss -c -tunlep
-  564  sudo ss -tunlep
-  565  sudo ss -tunlep -t
-  566  sudo ss -tunlep -table
-  567  sudo ss -tunlep --table
-  568  lcear
-  569  clear
-  570  sudo ss -tunlep
-  571  ss --hep
-  572  sudo ss -tunlep -color
-  573  sudo ss -tunlep --color
-  574  clear
-  575  systemctl 
-  576  systemctl status
-  577  systemctl status mariadb.service
-  578  systemctl status ssh.service
-  579  sudo ss -tunlep
-  580  sudo systemctl enable mariadb.service
-  581  ip link
-  582  ip -c link
-  583  ip -c addr
-  584  sudo netplan get
-  585  clear
-  586  sudo netplan get > netplanget.txt
-  587  cat netplanget.txt
-  588  clear
-  589  cat /etc/netplan
-  590  cat /etc/netplan/
-  591  ls /etc/netplan
-  592  sudo cat /etc/netplan/50-clcoud-init.yaml
-  593  sudo cat /etc/netplan/50-cloud-init.yaml
-  594  sudo netplan get
-  595  clear
-  596  sudo apt install
-  597  sudo apt upgrade
-  598  python3 --version
-  599  python
-  600  py
-  601  sudo apt install python3
-  602  py
-  603  python
-  604  python3
-  605  clear
-  606  sudo apt install libfuse2
-  607  libfuse2
-  608  libfuse
-  609  sudo apt install libfuse2
-  610  libfuse
-  611  libfuse2
-  612  sudo apt-get install -y curl
-  613  sudo apt install code
-  614  sudo apt install apt-transport-https
-  615  sudo apt update
-  616  sudo apt install code
-  617  echo "code code/add-microsoft-repo boolean true" | sudo debconf-set-collections
-  618  sudo apt install ./<file>.deb
   619  echo "code code/add-microsoft-repo boolean true" | sudo debconf-set-selections
   620  sudo apt-get install wget gpg wget -qo- https://packages.microsoft.com/keys/microsoft.asc | gpg - -dearmor > packages.microsoft.g
   621  sudo apt-get install wget gpg
@@ -909,92 +845,156 @@
  1463  cd ..
  1464  ls
  1465  poweroff
- 1466  docker run -it ubuntu bash
- 1467  docker run ubuntu
- 1468  docker run -it ubuntu bash
- 1469  docker ls
- 1470  docker ps
- 1471  docker images
- 1472  docker rmi ubuntu
- 1473  docker rmi -f a0e45e2ce6e6
- 1474  docker images
- 1475  docker run -it ubuntu bash
- 1476  docker images
- 1477  docker rmi ubuntu
- 1478  docker rmi 176767154c20
- 1479  docker rm 176767154c20
- 1480  docker rmi a0e45e2ce6e6
- 1481  docker stop ubuntu
- 1482  dockr rmi ubuntu
- 1483  docker rmi ubuntu
- 1484  docker rmi a0e45e2ce6e6
- 1485  docker rmi -f  a0e45e2ce6e6
- 1486  docker images
- 1487  docker run -it ubuntu bash
- 1488  docker ps
- 1489  docker images
- 1490  docker rm ubuntu
- 1491  docker rmi ubuntu
- 1492  docker rmi -f  a0e45e2ce6e6
- 1493  docker rm -f f2e1337fa430
- 1494  docker images
- 1495  docker rmi -f python
- 1496  docker rmi -f python3
- 1497  docker rmi -f bea8499a31bb
- 1498  docker rmi -f $(docker ps -aq)
- 1499  docker images
- 1500  docker rmi -f b0a0ffa922c2
- 1501  docker images
- 1502  docker rmi -f 67eb573f34c8
- 1503  docker stop -f $(docker ps -aq)
- 1504  docker stop  $(docker ps -aq)
- 1505  docker rmi -f 67eb573f34c8
- 1506  docker images
- 1507  docker rmi -f 78f2dcef8858
- 1508  docker images
- 1509  docker rmi -f bea8499a31bb
- 1510  clear
- 1511  docker images
- 1512  docker ps
- 1513  docker ps -a
- 1514  docker images -a
- 1515  docker rm -f $(docker ps -aq)
- 1516  docker ps
- 1517  docker ps -a
- 1518  docker images -a
- 1519  clear
- 1520  docker run -it ubuntu
- 1521  mkdir my-simpmle-webapp
- 1522  cd my-simpmle-webapp/
- 1523  ls
- 1524  cat > dockerfile
- 1525  nano dockerfile
- 1526  clear
- 1527  cat > app.py
- 1528  cat app.py
- 1529  docker build ../my-simpmle-webapp/
- 1530  nano dockerfile
- 1531  docker build . -t my-webapp
- 1532  nano dockerfile
- 1533  docker build . -t my-webapp
- 1534  docker push sirpranav/docker_day_one:my-webapp
- 1535  docker build . -t docker_day_one
- 1536  docker push sirpranav/docker_day_one:docker_day_one
- 1537  docker images
- 1538  docker push sirpranav/docker_day_one
- 1539  docker push sirpranav/docker_day_one:16adfdf1e639
- 1540  ls
- 1541  echo "# docker_day_one" >> README.md
- 1542  git init
- 1543  git add README.md
- 1544  git commit -m "first commit"
- 1545  git branch -M main
- 1546  git remote add origin git@github.com:pranavsirsufale/docker_day_one.git
- 1547  git push -u origin main
- 1548  git status
- 1549  git add .
- 1550  git status
- 1551  git commit -m "add sourc code"
- 1552  git push -u origin main
- 1553  docker images
- 1554  history > my_command_history.txt
+ 1466  ls
+ 1467  error.txt
+ 1468  clear
+ 1469  ls
+ 1470  cd app
+ 1471  ls
+ 1472  mv ./example-voting-app ../
+ 1473  lc
+ 1474  ls
+ 1475  ls ../
+ 1476  cd ../
+ 1477  ls
+ 1478  cd example-voting-app/
+ 1479  cat -r ../example-voting-app/
+ 1480  cat  ../example-voting-app/
+ 1481  cat  ../example-voting-app/*
+ 1482  clear
+ 1483  ls
+ 1484  cat architecture.excalidraw.png 
+ 1485  view architecture.excalidraw.png 
+ 1486  clear 
+ 1487  history
+ 1488  clear
+ 1489  cd vote
+ 1490  docker build . -t voting-app
+ 1491  clear
+ 1492  docker images
+ 1493  docker run -d -p 5000:80 voting-app
+ 1494  docker run -d --name=redis redis 
+ 1495  clear
+ 1496  docker run -d --name=redis
+ 1497  docker rm voting-app
+ 1498  docker ls
+ 1499  docker ps
+ 1500  docker run -d -p 5000:80 --link:redis  voting-app
+ 1501  docker ps
+ 1502  docker images
+ 1503  docker images all
+ 1504  docker images -a
+ 1505  docker ps -a
+ 1506  ip -c addr
+ 1507  docker run -d --name=redis redis
+ 1508  docker rm redis
+ 1509  docker run -d --name=redis redis
+ 1510  docker run -d -p 5000:80 --link redis:redis voting-app
+ 1511  docker run -p 5000:80 --link redis:redis voting-app
+ 1512  docker rm redis
+ 1513  docker stop redis
+ 1514  docker rm redis
+ 1515  docker run -d -p 5000:80 --link redis:redis voting-app
+ 1516  docker start redis
+ 1517  docker run -d -p 5000:80 --link redis:redis voting-app
+ 1518  docker ps
+ 1519  docker run redis
+ 1520  docker run -p 5000:80 --link redis:redis voting-app
+ 1521  docker rm redis
+ 1522  docker stop redis
+ 1523  docker rm redis:redis
+ 1524  docker stop redis
+ 1525  docker run -p 5000:80 --link redis:redis voting-app
+ 1526  docker run redis
+ 1527  docker run -d redis
+ 1528  docker run -p 5000:80 --link redis:redis voting-app
+ 1529  docker ps
+ 1530  docker stop redis
+ 1531  docker rmi redis
+ 1532  docker rm redis
+ 1533  docker stop redis
+ 1534  docker ps
+ 1535  docker rmi redis
+ 1536  docker rmi redis -f
+ 1537  docker ps
+ 1538  docker rmi 78f2dcef8858
+ 1539  docker rmi -f 78f2dcef8858
+ 1540  docker rmi --force 78f2dcef8858
+ 1541  docker rm $(docker ps -aq)
+ 1542  docke rps
+ 1543  docker ps
+ 1544  docker ps -a
+ 1545  docker stop voting-app
+ 1546  docker rmi $(docker ps -aq)
+ 1547  docker images
+ 1548  docker rmi $(docker images -aq)
+ 1549  docker images
+ 1550  docker ps
+ 1551  docker rm 78f2dcef8858
+ 1552  docker rm voting-app
+ 1553  docker rm ./voting-app
+ 1554  clear
+ 1555  ls
+ 1556  clear
+ 1557  ls
+ 1558  clear
+ 1559  docker build . -t voting-app
+ 1560  docker run -p 5000:80 voting-app
+ 1561  clear
+ 1562  docker run --name=redis 'redis
+ 1563  clear
+ 1564  docker run -d --name=redis redis
+ 1565  docker ps
+ 1566  docker run -p 5000:80 --link redis:redis voting-app
+ 1567  docker rm voting-app
+ 1568  docker stop voting-app
+ 1569  docker rmi voting-app
+ 1570  docker remove voting-app
+ 1571  docker run -p 5000:80 --link redis:redis voting-app
+ 1572  docker push sirpranav/docker_day_one:tagname
+ 1573  docker push sirpranav/docker_day_one:voting-app
+ 1574  docker run -p 5000:80 --link redis:redis voting-app
+ 1575  docker rmi voting-app
+ 1576  docker stop voting-app
+ 1577  docker rm voting-app
+ 1578  docker run -p 5000:80 --link redis:redis voting-app
+ 1579  docker run voting-app
+ 1580  docker login
+ 1581  docker run -p 5000:80 --link redis:redis voting-app
+ 1582  docker login
+ 1583  cat /home/pranav.docker/confing.json
+ 1584  cat /home/pranav/.docker/config.json
+ 1585  docker run -p 5000:80 --link redis:redis voting-app
+ 1586  docker run voting-app
+ 1587  clear
+ 1588  dock-img
+ 1589  mkdir dock-img |cd dock-img
+ 1590  mkdir dock-img
+ 1591  cd dock-img
+ 1592  clear
+ 1593  docker run -i ubuntu bash
+ 1594  cd my-simpmle-webapp/
+ 1595  clear
+ 1596  docker push my-webapp
+ 1597  docker login
+ 1598  cd $HOME/.docker
+ 1599  ls
+ 1600  nano config.json 
+ 1601  cd ..
+ 1602  cd Desktop
+ 1603  cd my-simple-webapp
+ 1604  ls
+ 1605  cd my-simpmle-webapp/
+ 1606  clear
+ 1607  docker push my-webapp
+ 1608  clear
+ 1609  docker build . -t sirpranav/my-webapp
+ 1610  docker push sirpranav/my-webapp
+ 1611  clear
+ 1612  docker images
+ 1613  ls
+ 1614  nano ./my-command_history.txt
+ 1615  ls
+ 1616  nano my_command_history.txt 
+ 1617  git status
+ 1618  history > my_command_history.txt 
