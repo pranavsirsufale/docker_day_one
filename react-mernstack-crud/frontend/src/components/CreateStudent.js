@@ -27,6 +27,8 @@ function CreateStudent() {
           name: "",
           email: "",
           rollno: "",
+          age: "",
+          gender: "" ,  // Added later by pranav
         });
       });
   };
@@ -37,6 +39,8 @@ function CreateStudent() {
     <div>
       <div className="form-wrapper">
         <form onSubmit={onSubmit}>
+
+
           <div className="mb-3">
             <label className="form-label">Name</label>
             <input
@@ -48,6 +52,36 @@ function CreateStudent() {
               onChange={inputsHandler}
             />
           </div>
+
+
+
+          {/*  added age and gender */}
+
+    <div className="mb-3">
+            <label className="form-label">Age</label>
+            <input
+              type="text"
+              className="form-control"
+              name="age"
+              id="age"
+              value={userForm.age}
+              onChange={inputsHandler}
+            />
+          </div>
+
+
+          <div className="mb-3">
+            <label className="form-label">Gender</label>
+            <input
+              type="text"
+              className="form-control"
+              name="gender"
+              id="gender"
+              value={userForm.gender}
+              onChange={inputsHandler}
+            />
+          </div>
+
           <div className="mb-3">
             <label className="form-label">Email</label>
             <input

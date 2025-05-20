@@ -42,6 +42,8 @@ function EditStudent() {
           name: res.data.data.name,
           email: res.data.data.email,
           rollno: res.data.data.rollno,
+          age : res.data.data.age , 
+          gender: res.data.data.gender,
         });
       });
   }, [params.id]);
@@ -61,6 +63,8 @@ function EditStudent() {
               onChange={inputsHandler}
             />
           </div>
+
+
           <div className="mb-3">
             <label className="form-label">Email</label>
             <input
@@ -72,6 +76,37 @@ function EditStudent() {
               onChange={inputsHandler}
             />
           </div>
+
+
+          {/*  add age and gender */}
+
+       <div className="mb-3">
+            <label className="form-label">Age</label>
+            <input
+              type="text"
+              className="form-control"
+              name="age"
+              id="age"
+              value={userForm.age}
+              onChange={inputsHandler}
+            />
+          </div>
+
+
+           <div className="mb-3">
+            <label className="form-label">Gender</label>
+            <input
+              type="text"
+              className="form-control"
+              name="gender"
+              id="gender"
+              value={userForm.gender}
+              onChange={inputsHandler}
+            />
+          </div>
+
+
+
           <div className="mb-3">
             <label className="form-label">Roll no.</label>
             <input

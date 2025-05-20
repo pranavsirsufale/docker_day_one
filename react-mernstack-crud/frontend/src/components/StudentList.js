@@ -34,6 +34,9 @@ function StudentList() {
           <tr>
             <th scope="col">#</th>
             <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Gender</th>
+            
             <th scope="col">Email</th>
             <th scope="col">Roll no</th>
             <th scope="col">Action</th>
@@ -45,8 +48,12 @@ function StudentList() {
               <tr key={index}>
                 <th scope="row">{user._id}</th>
                 <td>{user.name}</td>
+                <td>{user.age}</td>
+                <td>{user.gender}</td>
+                
                 <td>{user.email}</td>
                 <td>@{user.rollno}</td>
+                
                 <td>
                   <Link
                     className="btn btn-primary btn-sm me-2"
