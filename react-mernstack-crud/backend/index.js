@@ -8,7 +8,7 @@ const studentRoute = require("./routes/student.routes");
 
 // Connecting mongoDB Database
 mongoose
-  .connect("mongodb://127.0.0.1:27017/test")
+  .connect("mongodb://admin:password@mongo:27017/test?authSource=admin")
   .then((x) => {
     console.log(
       `Connected to Mongo! Database name: "${x.connections[0].name}"`,
@@ -29,7 +29,7 @@ app.use(cors());
 app.use("/students", studentRoute);
 
 // PORT
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 5000;
 const server = app.listen(port, () => {
   console.log("Connected to port " + port);
 });
