@@ -15,6 +15,8 @@ function CreateStudent() {
     }));
   };
 
+  console.log(userForm)
+
   const onSubmit = (e) => {
     e.preventDefault();
     axios
