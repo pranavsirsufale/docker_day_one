@@ -75,7 +75,7 @@ try:
         connection.commit()
 
 except Exception as e:
-    raise AppError(status_code = 500, message = e)
+    print(str(e))
 
 
 
