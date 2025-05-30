@@ -1,0 +1,16 @@
+[project]
+name = "testpy"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "hatch>=1.14.1",
+    "pdm>=2.24.2",
+    "pytest>=8.3.5",
+    "pytest-html>=4.1.1",
+    "pytest-xdist>=3.6.1",
+    "selenium>=4.33.0",
+    "webdriver-manager>=4.0.2",
+    "wheel>=0.45.1",
+]
