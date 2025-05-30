@@ -4,7 +4,7 @@ from POM.pages.LoginPage import LoginPage
 from POM.conf.conf_test import TestData
 # from POM.test.test_login import init_driver  # 👈 add this if fixture is not auto-discovered
 
-# @pytest.mark.usefixtures("init_driver")
+@pytest.mark.usefixtures("init_driver")
 class Test_Login(BaseTest):
     def test_signup_link_visible(self):
         self.loginPage = LoginPage(self.driver)
