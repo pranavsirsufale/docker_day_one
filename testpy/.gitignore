@@ -1,0 +1,33 @@
+# Ignore virtual Environment
+.venv/
+venv/
+
+#Byte - complied / optimzed / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Distribution / pacaging
+
+dist/
+build/
+*.egg-info
+
+#pytest cache
+.pytest_cache/
+
+#VScode and other editor settings
+.vscode/
+.idea/
+
+#OS -generated files
+.DS_Store
+Thumbs.db 
+
+#Lock files
+uv.lock 
+poetry.lock 
+Pipfile.lock 
+
+#Ignore logs
+*.log 
